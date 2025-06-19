@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binyam G. - Motion Designer & Video Editor</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Gray */
+            color: #E5E7EB; /* Light Gray */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-12;
+        }
+        .card {
+            @apply bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Binyam G.</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-sky-400 transition-colors">Portfolio</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-all">Contact Me</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:text-sky-400">About</a>
+            <a href="#services" class="block py-2 hover:text-sky-400">Services</a>
+            <a href="#portfolio" class="block py-2 hover:text-sky-400">Portfolio</a>
+            <a href="#contact" class="block mt-2 bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg text-center">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <img 
+                        src="https://placehold.co/150x150/4f46e5/ffffff?text=BG" 
+                        onerror="this.onerror=null;this.src='https://placehold.co/150x150/4f46e5/ffffff?text=BG';"
+                        alt="Binyam G." 
+                        class="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-sky-400 object-cover shadow-2xl"
+                    >
+                    <div class="md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                           Expert Motion Designer <br class="hidden md:block"/> & <span class="gradient-text">AI Video Specialist</span>
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300 max-w-2xl">
+                           I combine 8+ years of traditional editing expertise with cutting-edge AI tools to create viral content that captivates and delivers results.
+                        </p>
+                        <div class="mt-8 flex justify-center md:justify-start gap-4">
+                           <a href="#portfolio" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-all shadow-lg">View My Work</a>
+                           <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-all shadow-lg">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">About Me</h2>
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2 text-lg text-gray-300 space-y-4">
+                        <p>
+                            I'm Binyam, a passionate Video Editor, Motion Designer, and AI Video Specialist based in Addis Ababa. With over 8 years of experience, I've had the pleasure of creating engaging content that has reached a massive audience, including amassing over <strong>590K+ TikTok followers</strong> and <strong>10K+ YouTube subscribers</strong> for my channel, ETHIOSTAR TIMES.
+                        </p>
+                        <p>
+                            My unique approach combines traditional editing skills using industry-standard software like <strong>Adobe Premiere, After Effects, and Blender</strong>, with the power of cutting-edge AI tools such as <strong>Runway, Sora, Pika, and HeyGen</strong>. This fusion allows me to produce high-quality, on-trend videos quickly and efficiently.
+                        </p>
+                         <p>I'm dedicated to bringing your vision to life with a professional polish that captures attention and delivers measurable results.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <i class="fas fa-layer-group text-sky-400 text-4xl mb-2"></i>
+                                <h3 class="font-bold text-xl text-white">Experience</h3>
+                                <p class="text-gray-400">8+ Years</p>
+                            </div>
+                             <div class="bg-gray-800 p-6 rounded-lg">
+                                <i class="fas fa-check-circle text-sky-400 text-4xl mb-2"></i>
+                                <h3 class="font-bold text-xl text-white">Viral Content</h3>
+                                <p class="text-gray-400">Proven Track Record</p>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <i class="fas fa-rocket text-sky-400 text-4xl mb-2"></i>
+                                <h3 class="font-bold text-xl text-white">AI-Powered</h3>
+                                <p class="text-gray-400">Modern Workflows</p>
+                            </div>
+                             <div class="bg-gray-800 p-6 rounded-lg">
+                                <i class="fas fa-users text-sky-400 text-4xl mb-2"></i>
+                                <h3 class="font-bold text-xl text-white">Client-Focused</h3>
+                                <p class="text-gray-400">Unlimited Revisions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title gradient-text">My Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="card">
+                        <i class="fas fa-robot text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">AI Video Production</h3>
+                        <p class="text-gray-400">Using tools like Runway, Sora, Pika, HeyGen, and more to create stunning AI-generated videos.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="card">
+                        <i class="fas fa-video text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Professional Video Editing</h3>
+                        <p class="text-gray-400">Expert editing with Adobe Premiere Pro and DaVinci Resolve for a polished, professional finish.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="card">
+                        <i class="fas fa-drafting-compass text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Motion Graphics & Animation</h3>
+                        <p class="text-gray-400">Creating dynamic 2D/3D motion graphics and animations in After Effects and Blender.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="card">
+                        <i class="fab fa-youtube text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Social Media Content</h3>
+                        <p class="text-gray-400">Crafting engaging content optimized for platforms like TikTok, YouTube, and Instagram.</p>
+                    </div>
+                     <!-- Service Card 5 -->
+                    <div class="card">
+                        <i class="fas fa-palette text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Graphic Design</h3>
+                        <p class="text-gray-400">Designing compelling visuals using Illustrator and Photoshop to complement your brand.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="card">
+                        <i class="fas fa-film text-3xl text-sky-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Videos & Visual FX</h3>
+                        <p class="text-gray-400">Producing high-impact brand videos, promos, explainers, and stunning visual effects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-white">My Portfolio</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="card group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/111827/ffffff?text=Video+Editing" alt="Video Editing Portfolio" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-4">Video Editing Portfolio</h3>
+                        <p class="text-gray-400">A collection of my best video editing work.</p>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="card group">
+                        <div class="overflow-hidden rounded-lg">
+                             <img src="https://placehold.co/600x400/111827/ffffff?text=2D+Animation" alt="2D Animation Explainer" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-4">2D Animation Explainer Video</h3>
+                        <p class="text-gray-400">Engaging explainer video with professional voiceover.</p>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="card group">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/111827/ffffff?text=3D+Intro" alt="3D Intro Motion Graphics" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-4">3D Intro Motion Graphics</h3>
+                        <p class="text-gray-400">Dynamic and eye-catching 3D intro animations.</p>
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="card group">
+                        <div class="overflow-hidden rounded-lg">
+                           <img src="https://placehold.co/600x400/111827/ffffff?text=Logo+Design" alt="Logo Design" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-4">Logo Design</h3>
+                        <p class="text-gray-400">Creative and memorable logo designs for various brands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-20">
+             <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white">Let's create something amazing together!</h2>
+                 <p class="mt-4 text-lg text-gray-300">Have a project in mind? I'd love to hear about it.</p>
+                 <a href="#contact" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg text-lg">
+                    Message Me
+                 </a>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 pt-16 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-white">Get In Touch</h3>
+             <p class="text-gray-400 mt-2">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <a href="mailto:binyam.g@example.com" class="mt-4 inline-block text-xl text-sky-400 hover:text-sky-300 transition-colors">
+                binyam.g@example.com
+            </a>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://www.upwork.com/freelancers/~01a6b0c1e8a2b5e4d9" target="_blank" rel="noopener noreferrer" class="text-2xl text-gray-400 hover:text-sky-400 transition-colors"><i class="fas fa-briefcase"></i><span class="sr-only">Upwork</span></a>
+                <a href="#" class="text-2xl text-gray-400 hover:text-sky-400 transition-colors"><i class="fab fa-youtube"></i><span class="sr-only">YouTube</span></a>
+                <a href="#" class="text-2xl text-gray-400 hover:text-sky-400 transition-colors"><i class="fab fa-tiktok"></i><span class="sr-only">TikTok</span></a>
+                <a href="#" class="text-2xl text-gray-400 hover:text-sky-400 transition-colors"><i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
+            </div>
+             <p class="text-gray-500 text-sm mt-8">&copy; 2025 Binyam G. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+    </script>
+</body>
+</html>
